@@ -1,15 +1,15 @@
 [general]
-targets = my_github, my_gitlab
+targets = my_github
 shorten = true
 
 [my_github]
 service = github
 github.username = doronbehar
 github.login = doronbehar
-github.password = @oracle:eval:pass github.com
+github.password = @oracle:eval:pass www/github.com
 
 [my_gitlab]
 service = gitlab
 gitlab.host = gitlab.com
 gitlab.login = doronbehar
-gitlab.token = @oracle:eval:pass gitlab-token
+gitlab.token = @oracle:eval:pass api/gitlab
