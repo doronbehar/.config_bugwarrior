@@ -6,9 +6,13 @@ service = github
 github.username = doronbehar
 github.login = doronbehar
 github.token = @oracle:eval:pass api/github
+github.include_user_issues = False
+github.include_user_repos = False
+github.query = author:doronbehar state:open
 
 [my_gitlab]
 service = gitlab
 gitlab.host = gitlab.com
 gitlab.login = doronbehar
 gitlab.token = @oracle:eval:pass api/gitlab
+gitlab.include_todo = true
