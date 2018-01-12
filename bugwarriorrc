@@ -1,6 +1,5 @@
 [general]
-targets = my_github
-shorten = true
+targets = my_github, my_gitlab
 
 [my_github]
 service = github
