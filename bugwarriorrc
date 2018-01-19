@@ -1,5 +1,14 @@
 [general]
-targets = my_github, my_gitlab
+targets = my_github, my_gitlab, pidgin_trac
+
+[flavor.github]
+targets = my_github
+
+[flavor.gitlab]
+targets = my_gitlab
+
+[flavor.pidgin]
+targets = pidgin_trac
 
 [my_github]
 service = github
@@ -16,3 +25,11 @@ gitlab.host = gitlab.com
 gitlab.login = doronbehar
 gitlab.token = @oracle:eval:pass api/gitlab
 gitlab.include_todo = true
+
+[pidgin_trac]
+service = trac
+trac.base_uri = developer.pidgin.im
+trac.scheme = https
+trac.username = doronbehar
+trac.password = @oracle:eval:pass www/developer.pidgin.im
+trac.no_xmlrpc = true
