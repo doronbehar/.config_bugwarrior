@@ -14,7 +14,7 @@ targets = pidgin_trac
 service = github
 github.username = doronbehar
 github.login = doronbehar
-github.token = @oracle:eval:pass api/github
+github.token = @oracle:eval:gopass show -f api/github
 github.include_user_issues = False
 github.include_user_repos = False
 github.query = author:doronbehar state:open
@@ -23,7 +23,7 @@ github.query = author:doronbehar state:open
 service = gitlab
 gitlab.host = gitlab.com
 gitlab.login = doronbehar
-gitlab.token = @oracle:eval:pass api/gitlab
+gitlab.token = @oracle:eval:gopass show -f api/gitlab
 gitlab.include_todo = true
 
 [pidgin_trac]
@@ -31,5 +31,5 @@ service = trac
 trac.base_uri = developer.pidgin.im
 trac.scheme = https
 trac.username = doronbehar
-trac.password = @oracle:eval:pass www/developer.pidgin.im
+trac.password = @oracle:eval:gopass show -f www/developer.pidgin.im
 trac.no_xmlrpc = true
